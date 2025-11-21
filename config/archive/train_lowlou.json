@@ -1,5 +1,5 @@
 {
-    "base_path": "/home/AIIAcourse/course/231503031/work/rtmag/models/lowlou",
+    "base_path": "D:/models/lowlou",
 
     "model": {
         "model_name": "UNO",
@@ -37,8 +37,8 @@
 
     "data": {
         "dataset_name": "LowLou_Hnorm_Unit",
-        "train_path": "/data1/yiwen/rtmag/train_lowlou",
-        "val_path": "/data1/yiwen/rtmag/val_lowlou",
+        "train_path": "F:/lowlou/train_5000",
+        "val_path": "F:/lowlou/val_1000",
         "b_norm": 200,
         "batch_size": 1,
         "num_workers": 4
