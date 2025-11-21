@@ -53,6 +53,7 @@ if __name__ == "__main__":
             uno_n_modes = args.model["uno_n_modes"], 
             uno_out_channels = args.model["uno_out_channels"],
             uno_scalings = args.model["uno_scalings"],
+            channel_mlp_skip = args.model.get("channel_mlp_skip", "soft-gating"),
         )
     elif args.model["model_name"] == "UNO_dxdydz":
         class UNO_dxdydz(torch.nn.Module):
@@ -73,6 +74,7 @@ if __name__ == "__main__":
                     uno_n_modes = args.model["uno_n_modes"], 
                     uno_out_channels = args.model["uno_out_channels"],
                     uno_scalings = args.model["uno_scalings"],
+                    channel_mlp_skip = args.model.get("channel_mlp_skip", "soft-gating"),
                 )
                 self.fc = torch.nn.Linear(5, 3)
 
