@@ -8,7 +8,7 @@ import numpy as np
 import torch
 from torch.optim import Adam
 from torch.utils.tensorboard import SummaryWriter
-
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
 from neuralop.models import UNO
 
 from rtmag.train.training import train, get_dataloaders
