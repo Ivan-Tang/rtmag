@@ -14,3 +14,4 @@
 **/Wiegelmann/relax1
 **/Wiegelmann/relax1_openmp
 *.bat
+*.DS_Store
